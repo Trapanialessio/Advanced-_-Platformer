@@ -1,0 +1,57 @@
+{
+	"name": "Obstacle",
+	"plugin-id": "Sprite",
+	"sid": 899986240788867,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 95050,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.9200000000000004,
+								0.15349999999999991,
+								0.6485000000000001,
+								0.35499999999999987,
+								0.6310000000000001,
+								0.7975000000000001,
+								0.6215000000000002,
+								0.954,
+								0.6380000000000001,
+								0.999,
+								0.8730000000000001,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 833900387812762,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

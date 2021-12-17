@@ -1,0 +1,108 @@
+{
+	"name": "PressurePlate2",
+	"plugin-id": "Sprite",
+	"sid": 474359591183122,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 146,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6241279,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 149999755813130,
+				"name": "Normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 146,
+						"height": 53,
+						"originX": 0.589041095890411,
+						"originY": 0.4528301886792453,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9805882,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 146,
+						"height": 39,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8035323,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9743589743589743,
+								0,
+								0.9743589743589743
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 146,
+						"height": 26,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 716804,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9230769230769231,
+								0,
+								0.9230769230769231
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 134794533703109,
+				"name": "On pressed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 6
+			}
+		],
+		"subfolders": []
+	}
+}

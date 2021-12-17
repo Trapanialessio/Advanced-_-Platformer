@@ -1,0 +1,362 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 534486032727883,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 464354588088952,
+							"parameters": {
+								"animation": "\"Walking\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "PG",
+							"sid": 630433160095586,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 446193175363509
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 438963313159594,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 936144813029916,
+							"parameters": {
+								"animation": "\"Walking\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "PG",
+							"sid": 771482988100605,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 624919307031297
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-stopped",
+							"objectClass": "PG",
+							"sid": 489535270568664,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 945782818649355,
+							"parameters": {
+								"animation": "\"Standing\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 749649463665373
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 530217418764746,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 569348371862865,
+							"parameters": {
+								"animation": "\"Jumping\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 983784267246014
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fall",
+							"objectClass": "PG",
+							"sid": 248048947417747,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 202578309069678,
+							"parameters": {
+								"animation": "\"Falling\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 193762245408769
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "PG",
+							"sid": 764981948960460,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "PG",
+							"sid": 403234382298845,
+							"parameters": {
+								"animation": "\"Standing\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 443209735070750
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PG",
+							"sid": 857265915785345,
+							"parameters": {
+								"object": "Obstacle"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PG",
+							"sid": 464580252102982
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 300955585506206
+						}
+					],
+					"sid": 345551565215802
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "PG",
+							"sid": 321908955839287
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 155719517838674,
+							"parameters": {
+								"layout": "Game Over"
+							}
+						}
+					],
+					"sid": 973558134591400
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PG",
+							"sid": 898065127838244,
+							"parameters": {
+								"object": "Spike"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PG",
+							"sid": 800754696695186
+						}
+					],
+					"sid": 803332585583548
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PG",
+							"sid": 972577438937311,
+							"parameters": {
+								"object": "PressurePlate3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 859048166197208,
+							"parameters": {
+								"layout": "You Win"
+							}
+						}
+					],
+					"sid": 269233327990377
+				}
+			],
+			"sid": 730245875196563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PG",
+					"sid": 604642308805864,
+					"parameters": {
+						"object": "PressurePlate"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PressurePlate",
+					"sid": 740530449208732,
+					"parameters": {
+						"animation": "\"On pressed\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Door1",
+					"sid": 957088453527199,
+					"parameters": {
+						"animation": "\"Activated\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 543074472118870,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Door1",
+					"sid": 446268002827785
+				}
+			],
+			"sid": 276897396532867
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PG",
+					"sid": 825604509470715,
+					"parameters": {
+						"object": "PressurePlate2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PressurePlate2",
+					"sid": 988019929630723,
+					"parameters": {
+						"animation": "\"On pressed\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Door2",
+					"sid": 875056206201114,
+					"parameters": {
+						"animation": "\"On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 318394763138315,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Door2",
+					"sid": 724164309513398
+				}
+			],
+			"sid": 271433593441762
+		}
+	],
+	"sid": 321834440253341
+}
